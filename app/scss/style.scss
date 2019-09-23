@@ -439,6 +439,10 @@ g {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    &-item {
+      max-width: 370px;
+      width: 100%;
+    }
   }
 }
 .tutorial__img img {
