@@ -396,13 +396,10 @@ g {
 }
 // authors
 .authors {
-  @include bgi;
-  &__inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 761px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 761px;
   &__content {
     display: flex;
     padding: 70px 60px 80px;
@@ -419,7 +416,7 @@ g {
         font-weight: 700;
       }
     }
-    &-btn {
+    a {
       background-color: #fff;
       padding: 15px 40px;
       border: none;
