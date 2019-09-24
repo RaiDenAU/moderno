@@ -68,58 +68,69 @@
     background-size: cover;
     background-position: center;
     min-height: 533px;
-}
 
-.search__inner {
-    padding: 155px 0px 100px;
-    color: #ffffff;
-    text-align: center;
-    margin: 0 auto;
+    &-ni {
+        min-height: 230px;
 
-    &-title {
-        font-size: 48px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        line-height: 72px;
+        &__inner {
+            padding: 60px 0px 65px;
+
+        }
     }
 
-    &-subtitle {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 30px;
-        margin-bottom: 30px;
-    }
-
-    &-form {
-        max-width: 670px;
+    &__inner {
+        padding: 155px 0px 100px;
+        color: #ffffff;
+        text-align: center;
         margin: 0 auto;
-        position: relative;
-    }
 
-    input {
-        padding: 20px 60px 20px 25px;
-        display: block;
-        width: 100%;
-        letter-spacing: 0.7px;
-        box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
-        border: none;
-        border-radius: 4px;
-        font-size: 14px;
-    }
+        &-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 72px;
+        }
 
-    &::placeholder {
-        color: #90a4ae;
-        font-weight: 500;
-    }
+        &-subtitle {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
 
-    button {
-        position: absolute;
-        right: 20;
-        top: 18;
-        background-color: transparent;
-        border: none;
+        &-form {
+            max-width: 670px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        input {
+            padding: 20px 60px 20px 25px;
+            display: block;
+            width: 100%;
+            letter-spacing: 0.7px;
+            box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        &::placeholder {
+            color: #90a4ae;
+            font-weight: 500;
+        }
+
+        button {
+            position: absolute;
+            right: 20px;
+            top: 18px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
     }
 }
+
 
 // products
 .products {
@@ -566,8 +577,6 @@ g {
 
     &__col-menu {
         max-width: 220px;
-
-        li {}
 
         a {
             color: #b7c3c8;
