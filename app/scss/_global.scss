@@ -16,8 +16,8 @@ body {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    line-height: 24px;
     color: $text;
+    overflow-x: hidden;
 }
 
 a {
@@ -70,4 +70,64 @@ li {
     font-weight: 700;
     line-height: 60px;
     text-align: center;
+}
+
+.page-content {
+    background-color: #f4f6f5;
+}
+
+.breadcrumbs {
+    &__inner {
+        padding: 45px 0px 40px;
+
+        li {
+            display: inline-block;
+            position: relative;
+
+            a {
+                font-size: 15px;
+                font-weight: 400;
+                color: #b0bec5;
+            }
+
+            &+li {
+                margin-left: 25px;
+
+                &::before {
+                    content: "-";
+                    position: absolute;
+                    color: $green;
+                    left: -15px;
+                }
+            }
+
+            &:last-child {
+
+                a,
+                span {
+                    color: $bg;
+                }
+            }
+        }
+    }
+}
+
+.aside-item {
+    background-color: #fff;
+    padding: 25px 30px 0px 30px;
+    max-width: 270px;
+    width: 100%;
+    border: 1px solid #d7d7d7;
+
+    &+.aside-item {
+        margin-top: 30px;
+    }
+}
+
+.profile__btn {
+    display: none;
+}
+
+.header__btn-login {
+    margin-left: 15px;
 }
