@@ -32,6 +32,10 @@ li {
     list-style: none;
 }
 
+input:invalid {
+    box-shadow: none;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -130,4 +134,120 @@ li {
 
 .header__btn-login {
     margin-left: 15px;
+}
+
+#modal {
+    display: none;
+    max-width: 729px;
+    width: 100%;
+    background-color: #8bc34a;
+    padding-top: 90px;
+    padding-bottom: 100px;
+
+    .fancybox-button svg path {
+        fill: #fff;
+    }
+
+    .login__title {
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .wrapper__form {
+
+        form {
+            margin: 0 auto;
+            margin-top: 40px;
+            max-width: 400px;
+
+            label {
+                display: block;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    font-family: 'icomoon';
+                    font-size: 14px;
+                    left: 18px;
+                    color: #fff;
+                    top: 13px;
+
+                }
+
+                input {
+                    display: block;
+                    width: 100%;
+                    height: 43px;
+                    background-color: #76ae36;
+                    padding: 0px 40px;
+                    border: none;
+                    margin-top: 8px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #fff;
+
+                    &::placeholder {
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+
+        .login__label-name::before {
+            content: '\f007';
+        }
+
+        .login__label-pass::before {
+            content: "\f023";
+        }
+
+        button {
+            width: 139px;
+            height: 48px;
+            box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-right: 7px;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+
+        .create-btn {
+            width: 250px;
+            height: 50px;
+            background-color: #76ae36;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 400;
+            padding-top: 13px;
+            padding-left: 65px;
+            position: relative;
+
+            &::before {
+                content: "\f044";
+                position: absolute;
+                font-family: 'icomoon';
+                font-size: 18px;
+                left: 40px;
+                color: #fff;
+                top: 13px;
+
+            }
+        }
+    }
 }
