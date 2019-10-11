@@ -32,7 +32,8 @@ li {
     list-style: none;
 }
 
-input:invalid {
+input:invalid,
+textarea:invalid {
     box-shadow: none;
 }
 
@@ -81,6 +82,8 @@ input:invalid {
 }
 
 .breadcrumbs {
+    background-color: #f4f6f5;
+
     &__inner {
         padding: 45px 0px 40px;
 
