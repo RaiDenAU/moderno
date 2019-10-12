@@ -2,6 +2,10 @@
 @import "global";
 
 // header
+.header {
+    background-color: #fff;
+}
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -517,6 +521,10 @@
     }
 }
 
+.products .products__item {
+    flex-basis: calc(25% - 30px);
+}
+
 .products__item {
     max-width: 442px;
     width: 100%;
@@ -524,6 +532,7 @@
     box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
     margin-bottom: 30px;
     transition: all .5s;
+    margin-left: 30px;
 
     &-img {
         min-height: 250px;
@@ -546,10 +555,12 @@
 
     &-name {
         max-width: 310px;
+
     }
 
     &-name a {
         display: block;
+        text-align: left;
     }
 
     &-title {
@@ -617,8 +628,9 @@
 
 .products__inner-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-left: -30px;
 }
 
 .products__bottom-btn {
@@ -1278,6 +1290,7 @@ g {
     font-weight: 400;
     line-height: 0;
 
+
     .filter-left {
         display: flex;
         line-height: normal;
@@ -1309,11 +1322,12 @@ g {
 .product__page-items {
     display: flex;
     margin-top: 30px;
-    justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: -30px;
 
-    .products__item {
-        max-width: 269px;
+    .products .products__item {
+        flex-basis: calc(33.3333% - 30px);
+        margin-left: 30px;
 
         &-img {
             min-height: 180px;
@@ -1377,6 +1391,7 @@ g {
 
         &.list {
             max-width: 100%;
+            flex-basis: 100%;
 
             .products__item-img {
                 float: left;
@@ -1996,19 +2011,7 @@ g {
     }
 
     .error__img {
-        position: relative;
         margin-left: 15px;
-
-        &::before {
-            position: absolute;
-            bottom: 0px;
-            content: "";
-            left: -5px;
-            width: 157px;
-            height: 20px;
-            background-color: #7caf40;
-            border-radius: 50%;
-        }
     }
 
     .error-page__subtitle {
@@ -2318,6 +2321,7 @@ g {
 
                 label {
                     max-width: 200px;
+                    width: 100%;
                     color: #444444;
                     font-weight: 400;
                 }
@@ -2330,6 +2334,7 @@ g {
                 height: 40px;
                 border: 1px solid #d7d7d7;
                 background-color: #f9f9f9;
+                padding-left: 15px;
 
             }
         }

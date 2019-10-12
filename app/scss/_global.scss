@@ -57,6 +57,11 @@ textarea:invalid {
     padding: 0px 15px;
 }
 
+.container-fluide__wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .container-fluide {
     max-width: 100%;
     margin: 0 auto;
@@ -83,6 +88,8 @@ textarea:invalid {
 
 .breadcrumbs {
     background-color: #f4f6f5;
+    overflow: hidden;
+    width: 1200px;
 
     &__inner {
         padding: 45px 0px 40px;
@@ -253,4 +260,9 @@ textarea:invalid {
             }
         }
     }
+}
+
+.slick-slider {
+    text-align: center;
+
 }
